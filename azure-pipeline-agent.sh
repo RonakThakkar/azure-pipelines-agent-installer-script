@@ -6,7 +6,7 @@ if [ -z "$1" ]
     if [ -z "${AZURE_DEVOPS_SERVER_URL}" ]
     then
         echo "Kindly provide Azure DevOps Server URL."
-        exit 0
+        exit 2
     else
         azureDevOpsServerUrl=${AZURE_DEVOPS_SERVER_URL}
         echo $azureDevOpsServerUrl
@@ -20,7 +20,7 @@ if [ -z "$2" ]
     if [ -z "${AZURE_DEVOPS_PERSONAL_ACCESS_TOKEN}" ]
     then
         echo "Kindly provide Personal Access Token."
-        exit 0
+        exit 2
     else
         pat=${AZURE_DEVOPS_PERSONAL_ACCESS_TOKEN}
         echo $pat
