@@ -44,7 +44,7 @@ if [ -z "$4" ]
 fi
 
 echo "start"
-cd /home/azuredevopsuser
+cd /opt
 mkdir agent
 cd agent
 
