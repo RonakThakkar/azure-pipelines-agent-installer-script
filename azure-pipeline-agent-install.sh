@@ -43,8 +43,7 @@ if [ -z "$4" ]
     agentName=$4
 fi
 
-cd /home/azuredevopsuser
-cd agent
+cd /home/azuredevopsuser/agent
 
 sudo -u azuredevopsuser ./config.sh --unattended --url $azureDevOpsServerUrl --auth pat --token $pat --pool $agentPool --agent $agentName --acceptTeeEula --work ./_work --runAsService
 echo "configuration done"
