@@ -54,4 +54,14 @@ echo "service installed"
 sudo ./svc.sh start
 echo "service started"
 
+# sudo chmod o+w /opt/agent
+# sudo chmod -R $USER: /opt/agent
+
+# cd /opt/agent
+# sudo -u #USER: ./config.sh --unattended --url $azureDevOpsServerUrl --auth pat --token $pat --pool $agentPool --agent $agentName --acceptTeeEula --work ./_work --runAsService
+# echo "Configuration done"
+
+# sudo ./svc.sh install
+# echo "service installed"
+
 exit 0
